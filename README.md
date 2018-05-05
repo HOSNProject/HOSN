@@ -48,7 +48,7 @@ If you pressed *2* then you will be asked to Enter two interfaces formated as fo
 That is it ! If you want to change from IDS to IPS or visa versa just use the script again. 
 
 # NOTE
-HOSN is still in development so becareful when using it. If found any bugs or you have suggestions please feel free to contact us. Thanks !
+HOSN is still in development so becareful when using it. If you found any bugs or you have suggestions please feel free to contact us. Thanks !
 
 # Screenshots
 
