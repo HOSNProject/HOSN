@@ -1,0 +1,50 @@
+.dataTables_empty
+{
+    background-color: gray;
+}
+/*
+#menu{
+
+    height: 50px;
+    width: 100%;
+    background-color:gray;
+    color:white;
+    margin: auto;
+}
+
+
+.menu-all .menu-item {
+    float:left;
+    padding-left: 100px;
+    list-style-type:none;
+    line-height: 50px;
+    font-size: 100%;
+    color: aliceblue;
+
+}
+
+#SSIDField {
+
+    margin: auto;
+    display: block;
+    margin-top: 100px;
+
+
+}
+
+.col-centered{
+    margin: 0 auto;
+    float: none;
+}
+
+#APPasswordField {
+
+    margin: auto;
+    display: block;
+}
+
+#submit {
+    margin: auto;
+    display: block;
+}
+*/

@@ -1,0 +1,2 @@
+alert tcp any any -> any any (msg:"NMAP NULL Scan";priority:9; classtype:attempted-recon;flags:0;sid:10000006;)
+alert tcp any any -> any any (msg:"NMAP TCP Scan";priority:9;classtype:attempted-recon;flags:AR;sid:10000007;)

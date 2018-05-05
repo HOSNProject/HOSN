@@ -1,0 +1,18 @@
+classtype 			(DONE)
+priority			(DONE)
+content (nocase)		(DONE)
+flags				(DONE)
+seq				(DONE)
+itype				(DONE)
+icode				(DONE)
+ack				(DONE)
+fragbits
+flow
+id
+ipopts
+
+====================
+  ADDED BY DEFAULT
+====================
+
+sid
