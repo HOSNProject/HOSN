@@ -1,0 +1,10 @@
+<tr>
+<td>alert</td>
+<td>tcp</td>
+<td>any</td>
+<td>any</td>
+<td>any</td>
+<td>any</td>
+<td>(msg:any;sid:1525542547;classtype:attempted-admin;priority:10;)</td>
+</tr>
+
