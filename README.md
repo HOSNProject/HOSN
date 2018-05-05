@@ -31,6 +31,12 @@ www-data	ALL=(ALL) /usr/sbin/snort, /usr/bin/killall, /sbin/reboot
 You successfully installed HOSN and it should be up and running, However if you need the access point you should also run a script called `INSTALL_ACCESSPOINT.sh`. Follow the below steps to do so:
 1.  Give execute privilage to the script by running `sudo chmod +x INSTALL_ACCESSPOINT.sh`.
 2.  Then run the script `sudo ./INSTALL_ACCESSPOINT.sh`.
+
+After the instlation the project will work as IDS only if you want it to work as IPS simple just excute the script called `IDSorIPS.sh` by following the steps:
+1.  Give the script execute privileges by executing `sudo chmod +x IDSorIPS.sh`.
+2.  Then execute the script by typing `sudo ./IDSorIPS.sh`.
+3.  After that choose an option (1 for IDS or 2 for IPS) then press **ENTER**.
+
 # Team Members
 AbdulRhman Alfaifi
 [[Twitter][1] , Email: abdulrhmanalfaifi@outlook.com]
@@ -38,19 +44,20 @@ AbdulRhman Alfaifi
 Yahya Alfaifi
 [[Twitter][2] , Email: yahyaalfaifi1414@gmail.com , [CV][3]]
 
-# NOTE
-HOSN is still in development so becareful when using it. After the instlation the project will work as IDS only if you want it to work as IPS simple just excute the script called `IDSorIPS.sh` by following the steps:
-1.  Give the script execute privileges by executing `sudo chmod +x IDSorIPS.sh`.
-2.  Then execute the script by typing `sudo ./IDSorIPS.sh`.
-3.  After that choose an option (1 for IDS or 2 for IPS) then press **ENTER**.
-
 If you pressed *2* then you will be asked to Enter two interfaces formated as follow `Interface1:Interface2`.
 That is it ! If you want to change from IDS to IPS or visa versa just use the script again. 
+
+# NOTE
+HOSN is still in development so becareful when using it. If found any bugs or you have suggestions please feel free to contact us. Thanks !
 
 # Screenshots
 
 <p align="center">
-  <img src="screenshots/Home.png">
+  <img src="screenshots/Home.PNG">
+  <img src="screenshots/AddRules.PNG">
+  <img src="screenshots/MyRules.PNG">
+  <img src="screenshots/Analytics.PNG">
+  <img src="screenshots/Notifications.PNG">
 </p>
 
 [1]:https://twitter.com/A__ALFAIFI
