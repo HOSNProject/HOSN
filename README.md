@@ -47,6 +47,12 @@ HOSN is still in development so becareful when using it. After the instlation th
 If you pressed *2* then you will be asked to Enter two interfaces formated as follow `Interface1:Interface2`.
 That is it ! If you want to change from IDS to IPS or visa versa just use the script again. 
 
+# Screenshots
+
+<p align="center">
+  <img src="screenshots/Home.png">
+</p>
+
 [1]:https://twitter.com/A__ALFAIFI
 [2]:https://twitter.com/IyahyaC
 [3]:http://yahyaalfaifi.com/
