@@ -1,5 +1,5 @@
-#!bin/bash
-apt-get install apache2 mysql-server php libapache2-mod-php php-mcrypt php-mysql snort openjdk-9-jdk -y &&
+#!/bin/bash
+apt-get install apache2 mysql-server php5 libapache2-mod-php5 php5-mcrypt php5-mysql snort openjdk-8-jdk -y &&
 update-rc.d apache2 defaults &&
 update-rc.d apache2 enable &&
 service apache2 start &&
