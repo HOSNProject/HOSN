@@ -13,8 +13,27 @@ cp custom.rules /etc/snort/rules/ &&
 rm -rf /var/www/html &&
 cp -r snort /var/www/ &&
 cp -r html /var/www/ &&
+clear &&
+RED="\033[31m"
+RE="\033[0m"
+GREEN="\033[32m"
+username=''
+pass=''
+AP_pass=''
+while [ ${#username} -lt 5 ]
+do
+echo -n -e "[${GREEN}-${RE}] Please Enter a login username for HOSN webpage ${GREEN}(${RE}username ${GREEN}>${RE} 4${GREEN})${RE}: "
+read username
+done
+while [ ${#pass} -lt 8 ]
+do
+echo -n -e "[${GREEN}-${RE}] Please Enter a login password for HOSN webpage ${GREEN}(${RE}password ${GREEN}>${RE} 7${GREEN})${RE}: "
+read -s pass
+done
+echo ""
+hashedPass=`echo -n $pass | sha512sum | awk -F" " '{print $1}'`
 mysql -u root -p -e "create database IDS_IPS;use IDS_IPS;create table admins(username varchar(50), password varchar(128));CREATE USER 'IDS_IPS'@'localhost' IDENTIFIED BY 'IDSIPSADMIN';GRANT ALL PRIVILEGES ON *.* TO 'IDS_IPS'@'localhost' WITH GRANT OPTION;" &&
-mysql -u root -p -e "use IDS_IPS;insert into admins value('admin', 'c7ad44cbad762a5da0a452f9e854fdc1e0e7a52a38015f23f3eab1d80b931dd472634dfac71cd34ebc35d16ab7fb8a90c81f975113d6c7538dc69dd8de9077ec');" &&
+mysql -u root -p -e "use IDS_IPS;insert into admins value('$username', '$pass');" &&
 service apache2 restart &&
 service mysql restart &&
 chown -R www-data /var/www/ &&
