@@ -37,15 +37,15 @@ After the instlation the project will work as IDS only if you want it to work as
 2.  Then execute the script by typing `sudo ./IDSorIPS.sh`.
 3.  After that choose an option (1 for IDS or 2 for IPS) then press **ENTER**.
 
+If you pressed *2* then you will be asked to Enter two interfaces formated as follow `Interface1:Interface2`.
+That is it ! If you want to change from IDS to IPS or visa versa just use the script again. 
+
 # Team Members
 AbdulRhman Alfaifi
 [[Twitter][1] , Email: abdulrhmanalfaifi@outlook.com]
 
 Yahya Alfaifi
 [[Twitter][2] , Email: yahyaalfaifi1414@gmail.com , [CV][3]]
-
-If you pressed *2* then you will be asked to Enter two interfaces formated as follow `Interface1:Interface2`.
-That is it ! If you want to change from IDS to IPS or visa versa just use the script again. 
 
 # NOTE
 HOSN is still in development so becareful when using it. If you found any bugs or you have suggestions please feel free to contact us. Thanks !
