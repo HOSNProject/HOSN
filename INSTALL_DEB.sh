@@ -13,6 +13,7 @@ cp custom.rules /etc/snort/rules/ &&
 rm -rf /var/www/html &&
 cp -r snort /var/www/ &&
 cp -r html /var/www/ &&
+cp -r config /var/www/ &&
 clear &&
 RED="\033[31m"
 RE="\033[0m"
