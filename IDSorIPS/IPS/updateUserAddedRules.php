@@ -1,6 +1,7 @@
 <?php
     //var_dump(http_response_code(204));
     include 'config.php';
+    include 'snortConfig.php';
     session_start();
     if(isset($_SESSION['correctInfo']) == false)
     {

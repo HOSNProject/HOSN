@@ -1,5 +1,6 @@
 <?php
 include 'config.php';
+include 'snortConfig.php';
 session_start();
 if(!isset($_SESSION['correctInfo']) || $_SESSION['correctInfo'] == false)
 {

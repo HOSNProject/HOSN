@@ -56,9 +56,9 @@
                         <td>".$row['message']."</td>
                         <td>".$row['classification']."</td>
                         <td>".$row['priority']."</td>
-                        <td>".$row['tcp/udp']."</td>
-                        <td>".$row['srcip/srcport']."</td>
-                        <td>".$row['desip/desport']."</td>
+                        <td>".$row['tcp_udp']."</td>
+                        <td>".$row['srcip_srcport']."</td>
+                        <td>".$row['desip_desport']."</td>
                       </tr>
                       ";
                     }
@@ -71,9 +71,9 @@
                         <td>".$row['message']."</td>
                         <td>".$row['classification']."</td>
                         <td>".$row['priority']."</td>
-                        <td>".$row['tcp/udp']."</td>
-                        <td>".$row['srcip/srcport']."</td>
-                        <td>".$row['desip/desport']."</td>
+                        <td>".$row['tcp_udp']."</td>
+                        <td>".$row['srcip_srcport']."</td>
+                        <td>".$row['desip_desport']."</td>
                       </tr>
                       ";
                     }

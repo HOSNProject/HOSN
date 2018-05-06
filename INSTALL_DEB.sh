@@ -34,7 +34,7 @@ done
 echo ""
 hashedPass=`echo -n $pass | sha512sum | awk -F" " '{print $1}'`
 echo "[${GREEN}-${RE}] Please Enter MySQL Password ${GREEN}:${RE}";
-mysql -u root -p -e "create database IDS_IPS;use IDS_IPS;create table admins(username varchar(50), password varchar(128));insert into admins value('$username', '$hashedPass');CREATE USER 'IDS_IPS'@'localhost' IDENTIFIED BY 'IDSIPSADMIN';GRANT ALL PRIVILEGES ON *.* TO 'IDS_IPS'@'localhost' WITH GRANT OPTION;" &&
+mysql -u root -p -e "create database IDS_IPS;use IDS_IPS;create table admins(username varchar(50), password varchar(128));insert into admins value('$username', '$hashedPass');CREATE USER 'IDS_IPS'@'localhost' IDENTIFIED BY 'IDSIPSADMIN';GRANT ALL PRIVILEGES ON *.* TO 'IDS_IPS'@'localhost' WITH GRANT OPTION;CREATE TABLE logs (timestamp varchar(100) DEFAULT NULL,sid varchar(50) DEFAULT NULL,message varchar(200) DEFAULT NULL,classification varchar(100) DEFAULT NULL,priority varchar(15) DEFAULT NULL,tcp_udp varchar(3) DEFAULT NULL,srcip_srcport varchar(50) DEFAULT NULL,desip_desport varchar(50) DEFAULT NULL)" &&
 service apache2 restart &&
 service mysql restart &&
 chown -R www-data /var/www/ &&
