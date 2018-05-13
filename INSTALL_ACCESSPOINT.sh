@@ -3,7 +3,7 @@ RED="\033[31m"
 RE="\033[0m"
 GREEN="\033[32m"
 echo -e "${GREEN}Installing packages...${RE}"
-apt-get install hostapd > /dev/null &&
+apt-get install hostapd -y > /dev/null &&
 SSID=''
 AP_PASS=''
 while [[ ${#SSID} -lt 1 ]]
